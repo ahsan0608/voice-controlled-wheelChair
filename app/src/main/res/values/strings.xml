@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Auto Wheel</string>
+    <string name="title_activity_patients_maps">Map</string>
+    <string name="title_activity_helping_hand_maps">Map</string>
+</resources>

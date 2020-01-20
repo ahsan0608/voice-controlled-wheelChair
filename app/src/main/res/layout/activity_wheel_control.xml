@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context="com.example.ahsan.masumvaiproject.WheelControlActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="22"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FF7171"
+            android:onClick="onClickStart"
+            android:text="Connect BT"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/patientMapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="MAP" />
+
+        <Button
+            android:id="@+id/buttonVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:background="#FF7171"
+            android:text="VOICE ON" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#FF7171"
+            android:text="log out" />
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FF7171"
+            android:textColor="#000000"
+            android:text="Disconnect" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#000000"
+        android:padding="3sp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/fast"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:text="Fast"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/medium"
+            android:paddingRight="2sp"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/holo_purple"
+            android:text="Medium" />
+
+        <Button
+            android:id="@+id/slow"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:text="Slow"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="36"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/buttonF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@mipmap/f" />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@mipmap/b" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@mipmap/l" />
+
+            <Button
+                android:id="@+id/buttonR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@mipmap/r" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
